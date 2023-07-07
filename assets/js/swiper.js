@@ -2,7 +2,7 @@
 import Swiper from 'swiper/bundle';
 
 // import styles bundle
-import "swiper/swiper..min.css";
+import "swiper/swiper.min.css";
 // import "swiper/swiper.min.css";
 
 // import "./swiper.min.css"
