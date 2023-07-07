@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME FINDERS ! Detalle de búsquedad</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="fixed top-0 left-0 z-10 w-full h-20 px-6 xl:px-16 flex items-center justify-between border shadow bg-white">
+            <!-- LOGO -->
+            <a href="index.html" class="flex items-end">
+              <img src="./assets/image/logo/logo-home-company.svg" alt=""  class="w-[55px] sm:w-[50px]">
+              <img src="./assets/image/logo/logo-title-company.png" alt="" class="w-[150px] sm:w-[180px] ml-[-10px]">
+            </a>
+      
+            <!-- MENU -->
+            <ul id="openSideNav" class="fixed top-0 left-0 z-50 w-0 h-full bg-sidebar-menu text-white overflow-hidden ul-transition lg:static lg:flex lg:items-center lg:justify-center lg:w-[50%] lg:bg-transparent lg:text-gray-600">
+              <li id="closeSideNav" class="header-nav-li text-4xl text-end pb-4 pr-4 cursor-pointer lg:hidden">&times;</li>
+              <li class="header-nav-li"><a href="index.html" class="nav-li-a">Inicio</a></li>
+              <li class="header-nav-li flex justify-between items-center">
+                <a href="propiedad.html" class="w-full nav-li-a border-r-2 border-borderSidebar-menu lg:border-0 lg:hover:bg-inherit">Propiedades</a>
+                <i class="fas fa-chevron-down py-4 px-6 hover:bg-hover-nav-li-a lg:text-[.7rem] lg:p-0 lg:ml-[-.3rem]"></i>
+              </li>
+              <li class="header-nav-li"><a href="detalles.busqueda.html" class="nav-li-a">Detalles búsquedad</a></li>
+              <li class="header-nav-li"><a href="contacto.html" class="nav-li-a">Contactos</a></li>
+            </ul>
+      
+            <!-- BUSCADOR/REGISTRO -->
+            <div class="hidden lg:flex items-center">
+              <form action="" class="block h-[35px] rounded-2xl overflow-hidden border border-gray-300 mr-2">
+                <input id="input" type="text" placeholder="Buscar" class="border-0 w-[140px] h-full bg-transparent outline-none focus:outline-transparent pl-3 placeholder:text-[13px]">
+                <button name="submit" type="submit" value="Search" class="pr-4">
+                  <i class="fas fa-search text-gray-400"></i>
+                </button>
+              </form>
+      
+              <a href="#" class="block w-10 h-10 rounded-full text-center pt-[4px] border border-gray-300">
+                <i class="fa-solid fa-user text-gray-500 hover:text-primary hover:shadow"></i>
+              </a>
+            </div>
+
+            <!-- ICONO DE MENU BAR -->
+              <div id="menuBar" class="mt-4 ml-6 lg:hidden">
+              <i class="fa-solid fa-bars text-3xl cursor-pointer text-gray-400"></i>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="text-white text-center bg-red-500 p-4 ">detalle de búsquedad</h1>
+
+    <footer class="h-auto bg-gray-900 text-white p-16">
+        <div class="w-full max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 space-y-8 md:space-y-0">
+          <div class="w-full md:h-full bg-opacity-90 flex items-center justify-center">
+            <img class="w-28 " src="./assets/image/logo/logo-home-company.svg" alt="Logo de la empresa" loading="lazy">
+            <img class="w-48 -ml-14" src="./assets/image/logo/logo-title-company.png" alt="Logo de la empresa" loading="lazy">
+          </div>
+          <div class="space-y-8 ">
+            <div class="w-full flex flex-col justify-center xl:items-start items-center space-y-2">
+              <!-- Redes sociales -->
+              <a href="tel:+123456789" class="block text-gray-300 hover:text-white">Teléfono: +123456789</a>
+              <a href="mailto:info@example.com" class="block text-gray-300 hover:text-white">Correo electrónico: info@example.com</a>
+              
+              <ul class="flex space-x-3">
+                <li>
+                  <a href="https://wa.me/1234567890?text=¡Hola! Estoy interesado en sus propiedades." class="text-gray-300 hover:text-white">
+                    <i class="fab fa-whatsapp hover:text-green-500"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-300 hover:text-blue-500">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-300 hover:text-violet-400">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-300 hover:text-sky-400">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-300 hover:text-red-500">
+                    <i class="fab fa-pinterest"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="w-full">
+              <form class="w-full ml-auto grid grid-cols-[auto_100px] rounded-sm overflow-hidden">
+                <input type="text" placeholder="info@example.com" class="block w-full bg-gray-800 text-white p-4 outline-none" required>
+        
+                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-2 ">
+                  Enviar
+                </button>
+              </form>
+            </div>
+          </div>
+        </div> 
+      </footer>
+    
+      <div class=" bg-gray-950 p-6 text-center text-gray-500">
+        <p>&copy; 2023 Home Finders. Todos los derechos reservados.</p>
+      </div>
+      
+      <script type="module" src="./assets/js/index.js"></script>
+</body>
+</html>

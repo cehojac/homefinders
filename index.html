@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienes Raices</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="grid grid-rows-[auto,1fr,auto] h-screen">
+      <header class="w-full h-[80vh] lg:h-[90vh] bg-no-repeat bg-cover" style="background-image: url(https://ultra-realhomes.b-cdn.net/wp-content/uploads/2020/06/Modern-House.jpg);">
+          <nav class="fixed top-0 left-0 z-10 w-full h-20 px-6 xl:px-16 flex items-center justify-between border shadow bg-white">
+            <!-- LOGO -->
+            <a href="index.html" class="flex items-end">
+              <img src="./assets/image/logo/logo-home-company.svg" alt=""  class="w-[55px] sm:w-[50px]">
+              <img src="./assets/image/logo/logo-title-company.png" alt="" class="w-[150px] sm:w-[180px] ml-[-10px]">
+            </a>
+      
+            <!-- MENU -->
+            <ul id="openSideNav" class="fixed top-0 left-0 z-50 w-0 h-full bg-sidebar-menu text-white overflow-hidden ul-transition lg:static lg:flex lg:items-center lg:justify-center lg:w-[50%] lg:bg-transparent lg:text-gray-600">
+              <li id="closeSideNav" class="header-nav-li text-4xl text-end pb-4 pr-4 cursor-pointer lg:hidden">&times;</li>
+              <li class="header-nav-li"><a href="index.html" class="nav-li-a">Inicio</a></li>
+              <li class="header-nav-li flex justify-between items-center">
+                <a href="propiedad.html" class="w-full nav-li-a border-r-2 border-borderSidebar-menu lg:border-0 lg:hover:bg-inherit">Propiedades</a>
+                <i class="fas fa-chevron-down py-4 px-6 hover:bg-hover-nav-li-a lg:text-[.7rem] lg:p-0 lg:ml-[-.3rem]"></i>
+              </li>
+              <li class="header-nav-li"><a href="detalles.busqueda.html" class="nav-li-a">Detalles búsquedad</a></li>
+              <li class="header-nav-li"><a href="contacto.html" class="nav-li-a">Contactos</a></li>
+            </ul>
+      
+            <!-- BUSCADOR/REGISTRO -->
+            <div class="hidden lg:flex items-center">
+              <form action="" class="block h-[35px] rounded-2xl overflow-hidden border border-gray-300 mr-2">
+                <input id="input" type="text" placeholder="Buscar" class="border-0 w-[140px] h-full bg-transparent outline-none focus:outline-transparent pl-3 placeholder:text-[13px]">
+                <button name="submit" type="submit" value="Search" class="pr-4">
+                  <i class="fas fa-search text-gray-400"></i>
+                </button>
+              </form>
+      
+              <a href="#" class="block w-10 h-10 rounded-full text-center pt-[4px] border border-gray-300">
+                <i class="fa-solid fa-user text-gray-500 hover:text-primary hover:shadow"></i>
+              </a>
+            </div>
+
+            <!-- ICONO DE MENU BAR -->
+              <div id="menuBar" class="mt-4 ml-6 lg:hidden">
+              <i class="fa-solid fa-bars text-3xl cursor-pointer text-gray-400"></i>
+            </div>
+          </nav>
+
+          <div class="h-full bg-black bg-opacity-30 w-full flex justify-end items-end pb-8 px-8">
+            <div class="flex flex-col items-end">
+              <strong class="inline-block px-4 bg-cGreenForte hover:bg-primary hover:text-white cursor-pointer mb-2">En Venta</strong>
+              <span class="block bg-primary py-1 px-6 text-3xl text-white hover:text-inherit font-bold cursor-pointer">Precio: <b class="text-4xl">&euro; </b>1.258.000</span>
+            </div>
+          </div>
+      </header>
+
+      <main class="w-auto bg-white relative">
+        <section class="max-w-7xl m-auto bg-primaryLight grid grid-cols-4 p-6">
+          <a href="propiedad.html" class="col-span-4 lg:col-span-2">
+            <h1 class="text-[16.5px] sm:text-2xl text-primary capitalize">Encuentre en este lugar el hogar que busca </h1>
+          </a>
+          <a href="#" class="col-span-4 flex items-center my-2">
+            <i class="fa-solid fa-location-dot mr-2 text-navyBlue"></i>
+            <address>
+              <span class="block text-sm text-gray-500 hover:text-navyBlue cursor-pointer">Calle del Sol, 1258 fisticia, España</span>
+            </address>
+          </a>
+
+          <div class="col-span-4 flex justify-between items-center">
+            <ul class="flex items-end lg:justify-center xl:justify-start gap-4 lg:gap-6 xl:gap-4 h-8 pb-2 mt-8">
+              <li class="grid grid-cols-[40px_auto]">
+                <img src="/assets/image/icons/icon-badroom.svg" alt="" class=" inline-block opacity-70" style="object-position: center 13px;">
+                <span class="self-end h-[15px] text-[13px] font-bold ml-1">4</span>
+              </li>
+      
+              <li class="grid grid-cols-[30px_auto]">
+                <img src="/assets/image/icons/icon-bathroom.svg" alt="" class="inline-block icon-bathroom-position">
+                <span class="self-end h-[13px] text-[13px] font-bold ml-1">2</span>
+              </li>
+      
+              <li class="grid grid-cols-[35px_auto]">
+                <img src="/assets/image/icons/icon-car.svg" alt="" class=" inline-block opacity-70" style="object-position: center 13px;">
+                <span class="self-end h-[15px] text-[13px] font-bold ml-1">4</span>
+              </li>
+      
+              <li class="grid grid-cols-[28px_auto]">
+                <img src="/assets/image/icons/icon-dimension.svg" alt="" class="inline-block opacity-70 icon-area-position">
+                <span class="self-end h-[14px] text-[13px] font-bold ml-1">1282m²</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-span-4">
+            <h3 class="text-2xl font-semibold mt-12 mb-4 capitalize">detalles de la propiedad</h3>
+            <p class="text-[#808080] text-[18px]">
+              Un hogar acogedor y encantador en venta. Diseñado con comodidad y modernidad sin perder la calidez. Sala de estar acogedora con chimenea para relajarse. Cocina ideal para preparar comidas y disfrutar de momentos especiales. Jardín trasero tranquilo y privado. Crea recuerdos duraderos en este lugar especial. Descubre el hogar de tus sueños en esta encantadora propiedad. ¡Te esperamos con los brazos abiertos!
+            </p>
+          </div>
+        </section>
+
+        <!-- Propiedades destacadas -->
+        <section class="max-w-7xl m-auto px-6 py-16 s3xl:px-0  bg-gray-100 my-16" >
+          <h3 class="text-3xl mb-4 text-center">propiedades destacadas</h3>
+          <span class="block h-1 w-24 bg-primary m-auto"></span>
+          <div class="h-auto overflow-hidden mt-16">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 shadow-2xl overflow-hidden">
+              <!-- Aquí comienzan los card -->
+
+              <!-- propiedad 1 -->
+              <div class=" relative bg-white rounded-lg overflow-hidden shadow-xl">
+                <a href="#" class="block absolute top-0 right-0 z-10 bg-orange-500 hover:bg-primary py-[1px] px-2 mr-4 mt-3">
+                  <span class="text-white text-[13px] font-bold capitalize">en alquiler</span>
+                </a>
+
+                <div class="h-[180px] relative overflow-hidden">
+                  <a href="#" class="block h-full hover:capa-image">
+                    <img src="./assets/image/living-cocina.jpg" alt="Propiedad 1" class="w-full h-full object-cover hover:scale-110 transition-all duration-300 cursor-pointer">
+                  </a>
+                </div>
+                      
+                <div class="p-4">
+                  <h3 class="uppercase text-primary hover:text-inherit mb-2 cursor-pointer">luminoso living comedor</h3>
+                  <div class="flex justify-between">
+                    <a href="#" class="flex items-center hover:text-navyBlue">
+                      <i class="fa-solid fa-location-dot text-sm mr-1"></i>
+                      <address>
+                        <span class="inline-block text-[13px] text-gray-500 hover:text-navyBlue hover:font-bold ">Valencia, España</span>
+                      </address>
+                    </a>
+                    <span class="text-2xl text-black font-bold">&euro;10.000</span>
+                  </div>
+    
+                  <ul class="flex items-end gap-3 lg:gap-4 h-8 pb-2 mt-4">
+                    <li class="grid grid-cols-[35px_auto]">
+                      <img src="/assets/image/icons/icon-badroom.svg" alt="" class=" inline-block opacity-70" style="object-position: center 13px;">
+                      <span class="self-end h-[15px] text-[12px] font-bold ml-1">4</span>
+                    </li>
+
+                    <li class="grid grid-cols-[25px_auto]">
+                      <img src="/assets/image/icons/icon-bathroom.svg" alt="" class="inline-block icon-bathroom-position">
+                      <span class="self-end h-[14px] text-[12px] font-bold ml-1">2</span>
+                    </li>
+
+                    <li class="grid grid-cols-[32px_auto]">
+                      <img src="/assets/image/icons/icon-car.svg" alt="" class=" inline-block opacity-70" style="object-position: center 13px;">
+                      <span class="self-end h-[15px] text-[12px] font-bold ml-1">4</span>
+                    </li>
+
+                    <li class="grid grid-cols-[25px_auto]">
+                      <img src="/assets/image/icons/icon-dimension.svg" alt="" class="inline-block opacity-70 icon-area-position">
+                      <span class="self-end h-[14px] text-[12px] font-bold ml-1">1282m²</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- propiedad 2 -->
+              <div class=" relative bg-white rounded-lg overflow-hidden shadow-xl">
+                <a href="#" class="block absolute top-0 right-0 z-20 bg-cGreenForte hover:bg-primary py-[1px] px-2 mr-4 mt-3">
+                  <span class="text-white text-[13px] font-bold capitalize">en venta</span>
+                </a>
+
+                <div class="h-[180px] relative overflow-hidden">
+                  <a href="#" class="block h-full hover:capa-image">
+                    <img src="./assets/image/home1.jpg" alt="Propiedad 1" class="w-full h-full object-cover hover:scale-110 transition-all duration-300 cursor-pointer">
+                  </a>
+                </div>
+
+                <div class="p-4">
+                  <h3 class="uppercase text-primary hover:text-inherit mb-2 cursor-pointer">luminoso living comedor</h3>
+                  <div class="flex justify-between">
+                    <a href="#" class="flex items-center hover:text-navyBlue">
+                      <i class="fa-solid fa-location-dot text-sm mr-1"></i>
+                      <address>
+                        <span class="inline-block text-[13px] text-gray-500 hover:text-navyBlue hover:font-bold ">Valencia, España</span>
+                      </address>
+                    </a>
+                    <span class="text-2xl text-black font-bold">&euro;10.000</span>
+                  </div>
+
+                  <ul class="flex items-end gap-3 lg:gap-4 h-8 pb-2 mt-4">
+                    <li class="grid grid-cols-[35px_auto]">
+                      <img src="/assets/image/icons/icon-badroom.svg" alt="" class=" inline-block opacity-70" style="object-position: center 13px;">
+                      <span class="self-end h-[15px] text-[12px] font-bold ml-1">4</span>
+                    </li>
+
+                    <li class="grid grid-cols-[25px_auto]">
+                      <img src="/assets/image/icons/icon-bathroom.svg" alt="" class="inline-block icon-bathroom-position">
+                      <span class="self-end h-[14px] text-[12px] font-bold ml-1">2</span>
+                    </li>
+
+                    <li class="grid grid-cols-[32px_auto]">
+                      <img src="/assets/image/icons/icon-car.svg" alt="" class=" inline-block opacity-70" style="object-position: center 13px;">
+                      <span class="self-end h-[15px] text-[12px] font-bold ml-1">4</span>
+                    </li>
+
+                    <li class="grid grid-cols-[25px_auto]">
+                      <img src="/assets/image/icons/icon-dimension.svg" alt="" class="inline-block opacity-70 icon-area-position">
+                      <span class="self-end h-[14px] text-[12px] font-bold ml-1">1282m²</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- propiedad 3 -->
+              <div class=" relative bg-white rounded-lg overflow-hidden shadow-xl">
+                <a href="#" class="block absolute top-0 right-0 z-20 bg-violet-600 hover:bg-primary py-[1px] px-2 mr-4 mt-3">
+                  <span class="text-white text-[13px] font-bold capitalize">en reserva</span>
+                </a>
+
+                <div class="h-[180px] relative overflow-hidden">
+                  <a href="#" class="block h-full hover:capa-image">
+                    <img src="./assets/image/home2.jpg" alt="Propiedad 1" class="w-full h-full object-cover hover:scale-110 transition-all duration-300 cursor-pointer">
+                  </a>
+                </div>
+
+                <div class="p-4">
+                  <h3 class="uppercase text-primary hover:text-inherit mb-2 cursor-pointer">luminoso living comedor</h3>
+                  <div class="flex justify-between">
+                    <a href="#" class="flex items-center hover:text-navyBlue">
+                      <i class="fa-solid fa-location-dot text-sm mr-1"></i>
+                      <address>
+                        <span class="inline-block text-[13px] text-gray-500 hover:text-navyBlue hover:font-bold ">Valencia, España</span>
+                      </address>
+                    </a>
+                    <span class="text-2xl text-black font-bold">&euro;10.000</span>
+                  </div>
+
+                  <ul class="flex items-end gap-3 lg:gap-4 h-8 pb-2 mt-4">
+                    <li class="grid grid-cols-[35px_auto]">
+                      <img src="/assets/image/icons/icon-badroom.svg" alt="" class=" inline-block opacity-70" style="object-position: center 13px;">
+                      <span class="self-end h-[15px] text-[12px] font-bold ml-1">4</span>
+                    </li>
+
+                    <li class="grid grid-cols-[25px_auto]">
+                      <img src="/assets/image/icons/icon-bathroom.svg" alt="" class="inline-block icon-bathroom-position">
+                      <span class="self-end h-[14px] text-[12px] font-bold ml-1">2</span>
+                    </li>
+
+                    <li class="grid grid-cols-[32px_auto]">
+                      <img src="/assets/image/icons/icon-car.svg" alt="" class=" inline-block opacity-70" style="object-position: center 13px;">
+                      <span class="self-end h-[15px] text-[12px] font-bold ml-1">4</span>
+                    </li>
+
+                    <li class="grid grid-cols-[25px_auto]">
+                      <img src="/assets/image/icons/icon-dimension.svg" alt="" class="inline-block opacity-70 icon-area-position">
+                      <span class="self-end h-[14px] text-[12px] font-bold ml-1">1282m²</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+    
+              <!-- propiedad 4 -->
+              <div class=" relative bg-white rounded-lg overflow-hidden shadow-xl">
+                <a href="#" class="block absolute top-0 right-0 z-20 bg-cGreenForte hover:bg-primary py-[1px] px-2 mr-4 mt-3">
+                  <span class="text-white text-[13px] font-bold capitalize">en venta</span>
+                </a>
+
+                <div class="h-[180px] relative overflow-hidden">
+                  <a href="#" class="block h-full hover:capa-image">
+                    <img src="./assets/image/home4.jpg" alt="Propiedad 1" class="w-full h-full object-cover hover:scale-110 transition-all duration-300 cursor-pointer">
+                  </a>
+                </div>
+
+                <div class="p-4">
+                  <h3 class="uppercase text-primary hover:text-inherit mb-2 cursor-pointer">luminoso living comedor</h3>
+                  <div class="flex justify-between">
+                    <a href="#" class="flex items-center hover:text-navyBlue">
+                      <i class="fa-solid fa-location-dot text-sm mr-1"></i>
+                      <address>
+                        <span class="inline-block text-[13px] text-gray-500 hover:text-navyBlue hover:font-bold ">Valencia, España</span>
+                      </address>
+                    </a>
+                    <span class="text-2xl text-black font-bold">&euro;10.000</span>
+                  </div>
+
+                  <ul class="flex items-end gap-3 lg:gap-4 h-8 pb-2 mt-4">
+                    <li class="grid grid-cols-[35px_auto]">
+                      <img src="/assets/image/icons/icon-badroom.svg" alt="" class=" inline-block opacity-70" style="object-position: center 13px;">
+                      <span class="self-end h-[15px] text-[12px] font-bold ml-1">4</span>
+                    </li>
+
+                    <li class="grid grid-cols-[25px_auto]">
+                      <img src="/assets/image/icons/icon-bathroom.svg" alt="" class="inline-block icon-bathroom-position">
+                      <span class="self-end h-[14px] text-[12px] font-bold ml-1">2</span>
+                    </li>
+
+                    <li class="grid grid-cols-[32px_auto]">
+                      <img src="/assets/image/icons/icon-car.svg" alt="" class=" inline-block opacity-70" style="object-position: center 13px;">
+                      <span class="self-end h-[15px] text-[12px] font-bold ml-1">4</span>
+                    </li>
+
+                    <li class="grid grid-cols-[25px_auto]">
+                      <img src="/assets/image/icons/icon-dimension.svg" alt="" class="inline-block opacity-70 icon-area-position">
+                      <span class="self-end h-[14px] text-[12px] font-bold ml-1">1282m²</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- propiedad 5 -->
+              <div class=" relative bg-white rounded-lg overflow-hidden shadow-xl">
+                
+                <a href="#" class="block absolute top-0 right-0 z-20 bg-orange-500 hover:bg-primary py-[1px] px-2 mr-4 mt-3">
+                  <span class="text-white text-[13px] font-bold capitalize">en alquiler</span>
+                </a>
+
+                <div class="h-[180px] relative overflow-hidden">
+                  <a href="#" class="block h-full hover:capa-image">
+                    <img src="./assets/image/home5.jpg" alt="Propiedad 1" class="w-full h-full object-cover hover:scale-110 transition-all duration-300 cursor-pointer">
+                  </a>
+                </div>
+                    
+                <div class="p-4">
+                  <h3 class="uppercase text-primary hover:text-inherit mb-2 cursor-pointer">luminoso living comedor</h3>
+                  <div class="flex justify-between">
+                    <a href="#" class="flex items-center hover:text-navyBlue">
+                      <i class="fa-solid fa-location-dot text-sm mr-1"></i>
+                      <address>
+                        <span class="inline-block text-[13px] text-gray-500 hover:text-navyBlue hover:font-bold ">Valencia, España</span>
+                      </address>
+                    </a>
+                    <span class="text-2xl text-black font-bold">&euro;10.000</span>
+                  </div>
+    
+                  <ul class="flex items-end gap-3 lg:gap-4 h-8 pb-2 mt-4">
+                    <li class="grid grid-cols-[35px_auto]">
+                      <img src="/assets/image/icons/icon-badroom.svg" alt="" class=" inline-block opacity-70" style="object-position: center 13px;">
+                      <span class="self-end h-[15px] text-[12px] font-bold ml-1">4</span>
+                    </li>
+
+                    <li class="grid grid-cols-[25px_auto]">
+                      <img src="/assets/image/icons/icon-bathroom.svg" alt="" class="inline-block icon-bathroom-position">
+                      <span class="self-end h-[14px] text-[12px] font-bold ml-1">2</span>
+                    </li>
+
+                    <li class="grid grid-cols-[32px_auto]">
+                      <img src="/assets/image/icons/icon-car.svg" alt="" class=" inline-block opacity-70" style="object-position: center 13px;">
+                      <span class="self-end h-[15px] text-[12px] font-bold ml-1">4</span>
+                    </li>
+
+                    <li class="grid grid-cols-[25px_auto]">
+                      <img src="/assets/image/icons/icon-dimension.svg" alt="" class="inline-block opacity-70 icon-area-position">
+                      <span class="self-end h-[14px] text-[12px] font-bold ml-1">1282m²</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- propiedad 6 -->
+              <div class=" relative bg-white rounded-lg overflow-hidden shadow-xl">
+                <a href="#" class="block absolute top-0 right-0 z-20 bg-cGreenForte hover:bg-primary py-[1px] px-2 mr-4 mt-3">
+                  <span class="text-white text-[13px] font-bold capitalize">en venta</span>
+                </a>
+
+                <div class="h-[180px] relative overflow-hidden">
+                  <a href="#" class="block h-full hover:capa-image">
+                    <img src="./assets/image/home-habitacion.jpg" alt="Propiedad 1" class="w-full h-full object-cover hover:scale-110 transition-all duration-300 cursor-pointer">
+                  </a>
+                </div>
+
+                <div class="p-4">
+                  <h3 class="uppercase text-primary hover:text-inherit mb-2 cursor-pointer">luminoso living comedor</h3>
+                  <div class="flex justify-between">
+                    <a href="#" class="flex items-center hover:text-navyBlue">
+                      <i class="fa-solid fa-location-dot text-sm mr-1"></i>
+                      <address>
+                        <span class="inline-block text-[13px] text-gray-500 hover:text-navyBlue hover:font-bold ">Valencia, España</span>
+                      </address>
+                    </a>
+                    <span class="text-2xl text-black font-bold">&euro;10.000</span>
+                  </div>
+
+                  <ul class="flex items-end gap-3 lg:gap-4 h-8 pb-2 mt-4">
+                    <li class="grid grid-cols-[35px_auto]">
+                      <img src="/assets/image/icons/icon-badroom.svg" alt="" class=" inline-block opacity-70" style="object-position: center 13px;">
+                      <span class="self-end h-[15px] text-[12px] font-bold ml-1">4</span>
+                    </li>
+
+                    <li class="grid grid-cols-[25px_auto]">
+                      <img src="/assets/image/icons/icon-bathroom.svg" alt="" class="inline-block icon-bathroom-position">
+                      <span class="self-end h-[14px] text-[12px] font-bold ml-1">2</span>
+                    </li>
+
+                    <li class="grid grid-cols-[32px_auto]">
+                      <img src="/assets/image/icons/icon-car.svg" alt="" class=" inline-block opacity-70" style="object-position: center 13px;">
+                      <span class="self-end h-[15px] text-[12px] font-bold ml-1">4</span>
+                    </li>
+
+                    <li class="grid grid-cols-[25px_auto]">
+                      <img src="/assets/image/icons/icon-dimension.svg" alt="" class="inline-block opacity-70 icon-area-position">
+                      <span class="self-end h-[14px] text-[12px] font-bold ml-1">1282m²</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- propiedad 7 -->
+              <div class=" relative bg-white rounded-lg overflow-hidden shadow-xl">
+                <a href="#" class="block absolute top-0 right-0 z-20 bg-violet-600 hover:bg-primary py-[1px] px-2 mr-4 mt-3">
+                  <span class="text-white text-[13px] font-bold capitalize">en reserva</span>
+                </a>
+
+                <div class="h-[180px] relative overflow-hidden">
+                  <a href="#" class="block h-full hover:capa-image">
+                    <img src="./assets/image/edificio.jpg" alt="Propiedad 1" class="w-full h-full object-cover hover:scale-110 transition-all duration-300 cursor-pointer">
+                  </a>
+                </div>
+                      
+                <div class="p-4">
+                  <h3 class="uppercase text-primary hover:text-inherit mb-2 cursor-pointer">luminoso living comedor</h3>
+                  <div class="flex justify-between">
+                    <a href="#" class="flex items-center hover:text-navyBlue">
+                      <i class="fa-solid fa-location-dot text-sm mr-1"></i>
+                      <address>
+                        <span class="inline-block text-[13px] text-gray-500 hover:text-navyBlue hover:font-bold ">Valencia, España</span>
+                      </address>
+                    </a>
+                    <span class="text-2xl text-black font-bold">&euro;10.000</span>
+                  </div>
+    
+                  <ul class="flex items-end gap-3 lg:gap-4 h-8 pb-2 mt-4">
+                    <li class="grid grid-cols-[35px_auto]">
+                      <img src="/assets/image/icons/icon-badroom.svg" alt="" class=" inline-block opacity-70" style="object-position: center 13px;">
+                      <span class="self-end h-[15px] text-[12px] font-bold ml-1">4</span>
+                    </li>
+
+                    <li class="grid grid-cols-[25px_auto]">
+                      <img src="/assets/image/icons/icon-bathroom.svg" alt="" class="inline-block icon-bathroom-position">
+                      <span class="self-end h-[14px] text-[12px] font-bold ml-1">2</span>
+                    </li>
+
+                    <li class="grid grid-cols-[32px_auto]">
+                      <img src="/assets/image/icons/icon-car.svg" alt="" class=" inline-block opacity-70" style="object-position: center 13px;">
+                      <span class="self-end h-[15px] text-[12px] font-bold ml-1">4</span>
+                    </li>
+
+                    <li class="grid grid-cols-[25px_auto]">
+                      <img src="/assets/image/icons/icon-dimension.svg" alt="" class="inline-block opacity-70 icon-area-position">
+                      <span class="self-end h-[14px] text-[12px] font-bold ml-1">1282m²</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+    
+              <!-- propiedad 8 -->
+              <div class=" relative bg-white rounded-lg overflow-hidden shadow-xl">
+                <a href="#" class="block absolute top-0 right-0 z-20 bg-cGreenForte hover:bg-primary py-[1px] px-2 mr-4 mt-3">
+                  <span class="text-white text-[13px] font-bold capitalize">en venta</span>
+                </a>
+
+                <div class="h-[180px] relative overflow-hidden">
+                  <a href="#" class="block h-full hover:capa-image">
+                    <img src="./assets/image/piscina-escalera.jpg" alt="Propiedad 1" class="w-full h-full object-cover hover:scale-110 transition-all duration-300 cursor-pointer">
+                  </a>
+                </div>
+
+                <div class="p-4">
+                  <h3 class="uppercase text-primary hover:text-inherit mb-2 cursor-pointer">luminoso living comedor</h3>
+                  <div class="flex justify-between">
+                    <a href="#" class="flex items-center hover:text-navyBlue">
+                      <i class="fa-solid fa-location-dot text-sm mr-1"></i>
+                      <address>
+                        <span class="inline-block text-[13px] text-gray-500 hover:text-navyBlue hover:font-bold ">Valencia, España</span>
+                      </address>
+                    </a>
+                    <span class="text-2xl text-black font-bold">&euro;10.000</span>
+                  </div>
+
+                  <ul class="flex items-end gap-3 lg:gap-4 h-8 pb-2 mt-4">
+                    <li class="grid grid-cols-[35px_auto]">
+                      <img src="/assets/image/icons/icon-badroom.svg" alt="" class=" inline-block opacity-70" style="object-position: center 13px;">
+                      <span class="self-end h-[15px] text-[12px] font-bold ml-1">4</span>
+                    </li>
+
+                    <li class="grid grid-cols-[25px_auto]">
+                      <img src="/assets/image/icons/icon-bathroom.svg" alt="" class="inline-block icon-bathroom-position">
+                      <span class="self-end h-[14px] text-[12px] font-bold ml-1">2</span>
+                    </li>
+
+                    <li class="grid grid-cols-[32px_auto]">
+                      <img src="/assets/image/icons/icon-car.svg" alt="" class=" inline-block opacity-70" style="object-position: center 13px;">
+                      <span class="self-end h-[15px] text-[12px] font-bold ml-1">4</span>
+                    </li>
+
+                    <li class="grid grid-cols-[25px_auto]">
+                      <img src="/assets/image/icons/icon-dimension.svg" alt="" class="inline-block opacity-70 icon-area-position">
+                      <span class="self-end h-[14px] text-[12px] font-bold ml-1">1282m²</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- TESTIMONIOS DE NUESTRO CLIENTES -->
+        <section class="h-auto p-16 bg-primaryLight">
+          <div class="container mx-auto px-6">
+            <h3 class="text-3xl mb-4 text-center">testimonios de nuestros clientes</h3>
+            <span class="block h-1 w-24 bg-primary m-auto"></span>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-16">
+              <!-- Testimonio 1 -->
+              <div class="bg-white bg-opacity-70 rounded-lg overflow-hidden shadow-md p-6 relative">
+                <img src="./assets/image/icons/icons-llave.svg" alt="" class="absolute top-0 right-0 p-4">
+                <div class="flex items-center mb-4">
+                  <img src="./assets/image/users/christopher.jpg" alt="Cliente" class="w-14 h-14 rounded-full object-cover">
+                  <div class="ml-4">
+                    <p class="text-lg text-gray-800 font-bold">Erika Morales</p>
+                    <p class="text-sm text-gray-600">Cliente satisfecho</p>
+                  </div>
+                </div>
+                <p class="text-lg text-gray-700">"Excelente servicio y atención al cliente. Encontré mi casa de ensueño gracias a ellos."</p>
+              </div>
+        
+              <!-- Testimonio 2 -->
+              <div class="bg-white bg-opacity-70 rounded-lg overflow-hidden shadow-md p-6 relative">
+                <img src="./assets/image/icons/icons-llave.svg" alt="" class="absolute top-0 right-0 p-4">
+                <div class="flex items-center mb-4">
+                  <img src="./assets/image/users/alexander.jpg" alt="Cliente" class="w-14 h-14 rounded-full object-cover">
+                  <div class="ml-4">
+                    <p class="text-lg text-gray-800 font-bold">Carlos Herrera</p>
+                    <p class="text-sm text-gray-600">Cliente satisfecho</p>
+                  </div>
+                </div>
+                <p class="text-lg text-gray-700">"Increíble experiencia trabajando con ellos. Altamente recomendados."</p>
+              </div>
+        
+              <!-- Testimonio 3 -->
+              <div class="bg-white bg-opacity-70 rounded-lg overflow-hidden shadow-md p-6 relative">
+                <img src="./assets/image/icons/icons-llave.svg" alt="" class="absolute top-0 right-0 p-4">
+                <div class="flex items-center mb-4">
+                  <img src="./assets/image/users/michael.jpg" alt="Cliente" class="w-14 h-14 rounded-full object-cover">
+                  <div class="ml-4">
+                    <p class="text-lg text-gray-800 font-bold">Verónica Del Valle</p>
+                    <p class="text-sm text-gray-600">Cliente satisfecho</p>
+                  </div>
+                </div>
+                <p class="text-lg text-gray-700">"El equipo de bienes raíces me ayudó a encontrar la propiedad perfecta para mi familia. ¡Gracias!"</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- DESCRIPCION DEL SERVICO -->
+        <section class="max-w-7xl m-auto bg-gray-100 py-16 mt-16">
+          <div class="container mx-auto px-6">
+            <h3 class="text-3xl mb-4 text-center">descripción del servicio</h3>
+            <span class="block h-1 w-24 bg-primary m-auto"></span>
+            <div class="flex flex-col md:flex-row items-center justify-center mt-16">
+              <div class="md:w-1/2">
+                <img src="./assets/image/services.jpg" alt="Servicios" class="w-full h-auto mb-4 md:mb-0">
+              </div>
+              <div class="md:w-1/2 md:pl-10">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">Servicios de bienes raíces de alta calidad</h3>
+                <p class="text-gray-700">En nuestra empresa de bienes raíces, nos especializamos en proporcionar servicios de alta calidad para ayudarte a encontrar la propiedad perfecta. Nuestro equipo de expertos en bienes raíces se dedica a entender tus necesidades y brindarte soluciones personalizadas.</p>
+                <ul class="list-disc list-inside mt-4">
+                  <li class="text-gray-700">Asesoramiento experto en compra y venta de propiedades.</li>
+                  <li class="text-gray-700">Búsqueda exhaustiva de propiedades que se adapten a tus requisitos.</li>
+                  <li class="text-gray-700">Negociaciones transparentes y justas para garantizar el mejor trato.</li>
+                  <li class="text-gray-700">Apoyo en todo el proceso de documentación y trámites legales.</li>
+                  <li class="text-gray-700">Servicio de atención al cliente excepcional y seguimiento constante.</li>
+                </ul>
+                <p class="text-gray-700 mt-4">Confía en nosotros para encontrar la propiedad de tus sueños y hacer realidad tus objetivos inmobiliarios.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- NUESTROS AGENTES -->
+
+        <!-- Formulario de contacto -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-[auto_600px] mt-20 bg-primaryLight leading-10 pt-16 relative">
+          <h2 class="col-span-2 text-4xl text-center text-black mb-4">Contáctanos</h2>
+          <p class="col-span-2 w-3/4 s3xl:w-1/2 m-auto text-base s3xl:text-[19px] text-center text-gray-600 mb-12">Si deseas obtener más información, te invitamos a enviarnos un correo electrónico. Nuestro equipo de agentes estará encantado de ponerse en contacto contigo lo antes posible.</p>
+          <div class="hidden lg:block bg-center bg-cover" style="background-image: url('./assets/image/fondo.png')"></div>
+          <div class="h-full bg-white shadow-lg bg-gradient-to-r from-blue-600 to-blue-400 py-8 sm:px-6">
+            <!-- LOGO -->
+            <a href="index.html" class="flex items-end justify-center lg:pb-8 border-b border-primary pb-8 mb-8">
+              <img src="./assets/image/logo/logo-home-company.svg" alt=""  class="w-[45px] sm:w-[50px]">
+              <img src="./assets/image/logo/logo-title-company.png" alt="" class="w-[120px] sm:w-[180px] ml-[-10px]">
+            </a>
+            <form action="" class="grid grid-cols-2 gap-4 p-4 lg:p-0 rounded-xl">
+              <div class="flex flex-col col-span-1 w-full">
+                <label for="name" class="block text-sm text-white font-bold mb-2"><b>*</b>Nombre</label>
+                <input type="text" id="name" class="outline-none bg-white bg-opacity-20 px-2 border border-primaryLight rounded-lg text-black font-bold w-full">
+              </div>
+        
+              <div class="flex flex-col col-span-1">
+                <label for="lastName" class="block text-sm text-white font-bold mb-2"><b>*</b>Apellido</label>
+                <input type="text" id="lastName" class="outline-none bg-white bg-opacity-20 px-2 border border-primaryLight rounded-lg text-black font-bold w-full">
+              </div>
+        
+              <div class="flex flex-col col-span-1">
+                <label for="email" class="block text-sm text-white font-bold mb-2"><b>*</b>Correo</label>
+                <input type="email" id="email" class="outline-none bg-white bg-opacity-20 px-2 border border-primaryLight rounded-lg text-black font-bold w-full">
+              </div>
+        
+              <div class="flex flex-col col-span-1">
+                <label for="phone" class="block text-sm text-white font-bold mb-2"><b>*</b>Teléfono</label>
+                <input type="text" id="phone" class="outline-none bg-white bg-opacity-20 px-2 border border-primaryLight rounded-lg text-black font-bold w-full">
+              </div>
+        
+              <div class="col-span-2">
+                <label for="mensaje" class="block text-sm text-white font-bold mb-2"><b>*</b>Ingresa tu consulta</label>
+                <textarea name="mensaje" id="mensaje" class="outline-none resize-none w-full h-40 xl:h-40 bg-white bg-opacity-20 px-2 border border-primaryLight rounded-lg text-black font-bold"></textarea>
+              </div>
+        
+              <div class="col-span-2 flex justify-center">
+                <button type="submit" class="block w-40 text-1xl text-black hover:text-white font-bold  bg-cGreenForte hover:bg-transparent rounded-lg border-2 border-transparent hover:border-cGreenForte">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      
+      </main>
+        
+      <footer class="bg-gray-800 py-4 w-full h-auto">
+      <div class="px-4 text-center text-gray-500">
+        <p>&copy; 2023 Bienes Raíces. Todos los derechos reservados.</p>
+      </div>
+      </footer>
+    </div>
+    
+    <script type="module" src="./assets/js/index.js"></script>
+    <!-- <script type="module" src="./assets/js/acordeon.description.property.js"></script> -->
+    <script type="module" src="./assets/js/slide.detalle.property.js"></script>
+</body>
+</html>

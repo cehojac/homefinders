@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+   @apply font-sans
+  }
+
+  h1, h2, h3 {
+    @apply font-semibold  capitalize font-poppins
+  }
+}
+  
+@layer components {
+  .overlay {
+    @apply bg-black bg-opacity-20 relative z-20
+  }
+
+    .header-nav-li {
+      @apply border-b border-borderSidebar-menu;
+    }
+  
+    .ul-transition {
+      transition: 0.5s ease-in-out;
+    }
+  
+    .nav-li-a {
+      @apply block p-4 hover:bg-hover-nav-li-a;
+    }
+  
+    /*buscador central*/
+  
+    .ulSearcHome-dimension {
+      @apply w-[70px] h-[60px];
+    } 
+    
+  
+    @screen lg {
+      .display {
+        display: inherit;
+      }
+  
+      .ul-transition {
+        transition: none;
+      }
+  
+      .header-nav-li {
+        @apply border-0 hover:text-primary;
+      }
+  
+      .nav-li-a {
+        @apply text-base hover:bg-inherit p-3
+      }
+    }
+
+    @screen xl {
+      .nav-li-a {
+        @apply text-xl p-6
+      }
+    }
+
+    /* .euros {
+      @apply before:content-["€"] before:mr-2
+    } */
+
+    .icon-badroom-position {
+      object-position: center 10px;
+    }
+
+    .icon-badroom-property {
+      object-position: center 19px;
+    }
+
+    @screen md {
+      .icon-badroom-property {
+        object-position: center 28px;
+      }
+    }
+
+    @screen lg {
+      .icon-badroom-property {
+        object-position: center 19px;
+      }
+    }
+
+
+
+    .icon-bathroom-position,
+    .icon-bathroom-property {
+      object-position: center 1.3px;
+    }
+
+    @screen md {
+      .icon-bathroom-property {
+        object-position: center 3px;
+      }
+    }
+
+    @screen xl {
+      .icon-bathroom-property {
+        object-position: center 1.3px;
+      }
+    }
+
+    .icon-garage-property {
+      object-position: center 13px;
+    }
+
+    @screen md {
+      .icon-garage-property {
+        object-position: center 22px;
+      }
+    }
+
+    @screen xl {
+      .icon-garage-property {
+        object-position: center 13px;
+      }
+    }
+
+    .icon-area-position {
+      object-position: center 2px;
+    }
+
+    .auto {
+      margin-inline: auto;
+      margin-top: 1rem;
+    }
+
+    .slider-position {
+      object-position: center -50px;
+    }
+
+    .border-radius {
+      border-bottom-left-radius: 3rem;
+      border-bottom-right-radius: 3rem;
+    }
+
+    /* .overlay:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0 0 0 / .25); 
+    } */
+
+    .detail-layer:hover::before {
+      content: "\f06e";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+
+      width: 100%;
+      height: 100%;
+      font-family: "Font Awesome 5 Free";
+      background-color: #1db4ff60;
+      color: white;
+      font-size: 2rem;
+
+      display: grid;
+      place-items: center;
+    }
+
+    .capa-image:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0 0 0 / .25);
+      
+    }
+
+}
+
+.slide-property {
+  padding: 0 5rem;
+  height: 100px;
+  margin-top: 2rem;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 15px !important;
+  color: white;
+}
+
+.slide-agentes {
+  
+}
+
+.red {
+  border: 1px solid red;
+}
+
+.blue {
+  border: 1px solid blue;
+}
+
+.green {
+  border: 1px solid green;
+}
