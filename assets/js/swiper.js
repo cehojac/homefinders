@@ -2,7 +2,17 @@
 import Swiper from 'swiper/bundle';
 
 // import styles bundle
-import 'swiper/css/bundle';
+import "swiper/swiper-bundle.min.css";
+// import "swiper/swiper.min.css";
+
+// import "./swiper.min.css"
+
+// import Swiper from 'swiper';
+
+// import Swiper and modules styles
+// import 'swiper/css';
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
 
 const initializeSwipers = () => {
 
