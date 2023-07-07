@@ -1,5 +1,5 @@
 import Swiper from 'swiper/bundle';
-import "swiper/bundle.min.css";
+import "swiper/swiper-bundle.min.css";
 
 const initializeSwipers = () => {
 
