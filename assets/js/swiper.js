@@ -2,7 +2,8 @@
 import Swiper from 'swiper/bundle';
 
 // import styles bundle
-import "swiper/swiper-bundle.min.css";
+// import "swiper/swiper-bundle.min.css";
+import Swiper from 'swiper/bundle/esm/swiper-bundle.esm.browser.min.js'
 // import "swiper/swiper.min.css";
 
 // import "./swiper.min.css"
