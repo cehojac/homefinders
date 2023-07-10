@@ -3,12 +3,16 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-   @apply font-sans
+   @apply font-sans bg-white
   }
 
   h1, h2, h3 {
-    @apply font-semibold  capitalize font-poppins
+    @apply font-semibold capitalize font-poppins
   }
 }
   
@@ -194,10 +198,6 @@
   color: white;
 }
 
-.slide-agentes {
-  
-}
-
 .red {
   border: 1px solid red;
 }
@@ -209,3 +209,22 @@
 .green {
   border: 1px solid green;
 }
+
+@layer utilities {
+  /* Barra scroll buscador principal */
+  .scrollbar::-webkit-scrollbar {
+    width: 12px;
+    height: 5px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 1rem;
+    background-color: #ececec;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: #90CDF4;
+    border-radius: 1rem;
+  }
+}
+

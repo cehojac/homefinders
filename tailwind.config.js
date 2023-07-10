@@ -30,12 +30,16 @@ module.exports = {
         "Monrope": "'Manrope', sans-serif",
         "poppins": "'Poppins', sans-serif",
       },
+      boxShadow: {
+        '1xl': '0 1px 10px 5px #1db4ff31'
+      },
       transitionProperty: {
         'max-height': 'max-height',
       },
       screens: {
         's375': '375px',
         's425': '425px',
+        's1xl': '900px',
         's2xl': '1360px',
         's3xl': '1440px',
         's4xl': '1920px',

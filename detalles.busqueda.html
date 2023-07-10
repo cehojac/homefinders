@@ -11,107 +11,547 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav class="fixed top-0 left-0 z-10 w-full h-20 px-6 xl:px-16 flex items-center justify-between border shadow bg-white">
-            <!-- LOGO -->
-            <a href="index.html" class="flex items-end">
-              <img src="./assets/image/logo/logo-home-company.svg" alt=""  class="w-[55px] sm:w-[50px]">
-              <img src="./assets/image/logo/logo-title-company.png" alt="" class="w-[150px] sm:w-[180px] ml-[-10px]">
-            </a>
-      
-            <!-- MENU -->
-            <ul id="openSideNav" class="fixed top-0 left-0 z-50 w-0 h-full bg-sidebar-menu text-white overflow-hidden ul-transition lg:static lg:flex lg:items-center lg:justify-center lg:w-[50%] lg:bg-transparent lg:text-gray-600">
-              <li id="closeSideNav" class="header-nav-li text-4xl text-end pb-4 pr-4 cursor-pointer lg:hidden">&times;</li>
-              <li class="header-nav-li"><a href="index.html" class="nav-li-a">Inicio</a></li>
-              <li class="header-nav-li flex justify-between items-center">
-                <a href="propiedad.html" class="w-full nav-li-a border-r-2 border-borderSidebar-menu lg:border-0 lg:hover:bg-inherit">Propiedades</a>
-                <i class="fas fa-chevron-down py-4 px-6 hover:bg-hover-nav-li-a lg:text-[.7rem] lg:p-0 lg:ml-[-.3rem]"></i>
-              </li>
-              <li class="header-nav-li"><a href="detalles.busqueda.html" class="nav-li-a">Detalles búsquedad</a></li>
-              <li class="header-nav-li"><a href="contacto.html" class="nav-li-a">Contactos</a></li>
-            </ul>
-      
-            <!-- BUSCADOR/REGISTRO -->
-            <div class="hidden lg:flex items-center">
-              <form action="" class="block h-[35px] rounded-2xl overflow-hidden border border-gray-300 mr-2">
-                <input id="input" type="text" placeholder="Buscar" class="border-0 w-[140px] h-full bg-transparent outline-none focus:outline-transparent pl-3 placeholder:text-[13px]">
-                <button name="submit" type="submit" value="Search" class="pr-4">
-                  <i class="fas fa-search text-gray-400"></i>
-                </button>
-              </form>
-      
-              <a href="#" class="block w-10 h-10 rounded-full text-center pt-[4px] border border-gray-300">
-                <i class="fa-solid fa-user text-gray-500 hover:text-primary hover:shadow"></i>
-              </a>
-            </div>
-
-            <!-- ICONO DE MENU BAR -->
-              <div id="menuBar" class="mt-4 ml-6 lg:hidden">
-              <i class="fa-solid fa-bars text-3xl cursor-pointer text-gray-400"></i>
-            </div>
-        </nav>
+<body class="">
+  <div class="w-full min-h-screen flex flex-col relative">
+    <header class="h-20">
+      <nav class="fixed top-0 left-0 z-30 w-full h-20 px-6 xl:px-16 flex items-center justify-between border shadow bg-white">
+        <!-- LOGO -->
+        <a href="index.html" class="flex items-end">
+          <img src="./assets/image/logo/logo-home-company.svg" alt=""  class="w-[55px]">
+          <img src="./assets/image/logo/logo-title-company.png" alt="" class="w-[180px] ml-[-10px]">
+        </a>
+  
+        <!-- MENU -->
+        <ul id="openMenuBar" class="fixed top-0 left-0 z-30 w-0 h-full bg-sidebar-menu text-white overflow-hidden ul-transition lg:static lg:flex lg:items-center lg:justify-center lg:w-[50%] lg:bg-transparent lg:text-gray-600">
+          <li id="closeTimes" class="header-nav-li text-4xl text-end pb-4 pr-4 cursor-pointer lg:hidden">&times;</li>
+          <li class="header-nav-li"><a href="index.html" class="nav-li-a">Inicio</a></li>
+          <li class="header-nav-li flex justify-between items-center">
+            <a href="propiedad.html" class="w-full nav-li-a border-r-2 border-borderSidebar-menu lg:border-0 lg:hover:bg-inherit">Propiedad</a>
+            <i id="chevronMenu" class="fas fa-chevron-down py-4 px-6 hover:bg-hover-nav-li-a lg:text-[.7rem] lg:p-0 lg:ml-[-.3rem]"></i>
+          </li>
+          <li class="header-nav-li"><a href="detalles.busqueda.html" class="nav-li-a">Detalles Búsquedad</a></li>
+          <li class="header-nav-li"><a href="contacto.html" class="nav-li-a">Contactos</a></li>
+        </ul>
+  
+         <!-- BUSCADOR/REGISTRO -->
+         <div class="hidden lg:flex items-center">
+          <form action="" class="block h-[35px] rounded-2xl overflow-hidden border border-gray-300 mr-2">
+            <input id="input" type="text" placeholder="Buscar" class="border-0 w-[140px] h-full bg-transparent outline-none focus:outline-transparent pl-3 placeholder:text-[13px]">
+            <button name="submit" type="submit" value="Search" class="pr-4">
+              <i class="fas fa-search text-gray-400"></i>
+            </button>
+          </form>
+  
+          <a href="#" class="block w-10 h-10 rounded-full text-center pt-[4px] border border-gray-300">
+            <i class="fa-solid fa-user text-gray-500 hover:text-primary hover:shadow"></i>
+          </a>
+        </div>
+  
+        <!-- ICONO DE MENU BAR -->
+          <div id="menuBar" class="mt-4 ml-6 lg:hidden">
+          <i class="fa-solid fa-bars text-3xl cursor-pointer text-gray-400"></i>
+        </div>
+      </nav>
     </header>
 
-    <h1 class="text-white text-center bg-red-500 p-4 ">detalle de búsquedad</h1>
-
-    <footer class="h-auto bg-gray-900 text-white p-16">
-        <div class="w-full max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 space-y-8 md:space-y-0">
-          <div class="w-full md:h-full bg-opacity-90 flex items-center justify-center">
-            <img class="w-28 " src="./assets/image/logo/logo-home-company.svg" alt="Logo de la empresa" loading="lazy">
-            <img class="w-48 -ml-14" src="./assets/image/logo/logo-title-company.png" alt="Logo de la empresa" loading="lazy">
+    <main class="flex-grow">
+      <h2 class="text-2xl text-center xl:text-4xl font-[300] text-white bg-gradient-to-r from-sky-400 to-sky-600 p-6 mt-8">
+        buscador de propiedades 
+      </h2>
+      <section class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 lg:gap-8  bg-sky-100 lg:px-6 xl:px-8 py-12">
+        <!-- Mapa -->
+        <div class="lg:h-full h-96 w-full col-span-1 xl:col-span-2 lg:rounded-2xl lg:border-2 border-sky-400 shadow-1xl overflow-hidden">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1024000.0000000002!2d-4.4213988!3d40.46366700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229978a7c6f21%3A0xb9ec9c4da3d66d86!2sSpain!5e0!3m2!1sen!2sus!4v1639505072306!5m2!1sen!2sus" class="border-0 w-full h-full" allowfullscreen="" loading="lazy"></iframe>
           </div>
-          <div class="space-y-8 ">
-            <div class="w-full flex flex-col justify-center xl:items-start items-center space-y-2">
-              <!-- Redes sociales -->
-              <a href="tel:+123456789" class="block text-gray-300 hover:text-white">Teléfono: +123456789</a>
-              <a href="mailto:info@example.com" class="block text-gray-300 hover:text-white">Correo electrónico: info@example.com</a>
-              
-              <ul class="flex space-x-3">
-                <li>
-                  <a href="https://wa.me/1234567890?text=¡Hola! Estoy interesado en sus propiedades." class="text-gray-300 hover:text-white">
-                    <i class="fab fa-whatsapp hover:text-green-500"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-gray-300 hover:text-blue-500">
-                    <i class="fab fa-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-gray-300 hover:text-violet-400">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-gray-300 hover:text-sky-400">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-gray-300 hover:text-red-500">
-                    <i class="fab fa-pinterest"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="w-full">
-              <form class="w-full ml-auto grid grid-cols-[auto_100px] rounded-sm overflow-hidden">
-                <input type="text" placeholder="info@example.com" class="block w-full bg-gray-800 text-white p-4 outline-none" required>
         
-                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-2 ">
-                  Enviar
-                </button>
-              </form>
+
+        <!-- Buscador de propiedades -->
+        <div class="w-full col-span-1">
+          <form action="" class="block max-w-4xl m-auto lg:bg-white s1xl:rounded-3xl shadow-1xl p-6">
+            <div class="bg-withe bg-white rounded-3xl border shadow-1xl xl:shadow-none p-4 md:py-2 px-4 transition-max-height duration-700 ease-in">
+              <!-- filtro de busquedad -->
+              <div class="grid grid-cols-1 md:grid-cols-1 gap-2 md:divid-x border-b pb-4">
+                <!-- seleccionar ubicación -->
+                <div class="h-10 px-3 relative">
+                  <div class="w-full h-full flex items-center justify-between relative">
+                    <button class="text-gray-700 hover:text-sky-400">
+                      <i class="fas fa-map-marker-alt mr-1 text-sm text-sky-400"></i>
+                      Ubicación
+                    </button>
+                    <i class="fas fa-caret-down openFilterSearch ml-1 text-lg text-sky-400 cursor-pointer"></i> 
+                  </div>
+
+                  <div class="searchOpen max-h-0 absolute top-full left-0 z-10 w-full h-[250px] overflow-hidden overflow-y-scroll bg-white shadow-md transition-max-height duration-500 ease-in scrollbar">
+                      <ul class="w-full full border-2">
+                        <li class="p-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Barcelona</li>
+                        <li class="p-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Madrid</li>
+                        <li class="p-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Valencia</li>
+                        <li class="p-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Sevilla</li>
+                        <li class="p-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Bilbao</li>
+                        <li class="p-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Málaga</li>
+                        <li class="p-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Granada</li>
+                        <li class="p-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Palma de Mallorca</li>
+                        <li class="p-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Zaragoza</li>
+                        <li class="p-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Alicante</li>
+                      </ul>
+                  </div>
+                </div>
+
+                <!-- seleccionar inmuebles -->
+                <div class="h-10 px-3 relative">
+                  <div class="w-full h-full flex items-center justify-between">
+                    <button class="text-gray-700 hover:text-sky-400">
+                      <i class="fas fa-home mr-1 text-sm text-sky-400"></i>
+                      Inmuebles
+                    </button>
+                    <i class="fas fa-caret-down openFilterSearch ml-1 text-lg text-sky-400 cursor-pointer"></i> 
+                  </div>
+
+                  <div class="searchOpen max-h-0 absolute top-full left-0 w-full z-10 h-[250px] overflow-hidden overflow-y-scroll bg-white shadow-md transition-max-height duration-500 ease-in scrollbar">
+                    <ul class="w-full full border-2">
+                      <li class="p-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Apartamentos</li>
+                      <li class="p-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Casas unifamiliares</li>
+                      <li class="p-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Chalets</li>
+                      <li class="p-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Áticos</li>
+                      <li class="p-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Locales comerciales</li>
+                      <li class="p-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Terrenos</li>
+                      <li class="p-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Oficinas</li>
+                      <li class="p-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Locales industriales</li>
+                      <li class="p-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Propiedades rurales</li>
+                      <li class="p-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Locales para alquiler</li>
+                    </ul>
+                </div>
+                </div>
+                
+                <!-- seleccionar estado -->
+                <div class="h-10 px-3 relative">
+                  <div class="w-full h-full flex items-center justify-between">
+                    <button class="text-gray-700 hover:text-sky-400">
+                      <i class="fa-solid fa-circle-check text-sm text-sky-400 mr-1"></i>
+                      Estado
+                    </button>
+                    <i class="fas fa-caret-down openFilterSearch ml-1 text-lg text-sky-400 cursor-pointer"></i> 
+                  </div>
+                  <!-- si agregan mas elementos agregar una barra de scroll overflow-y-scroll -->
+                  <div class="searchOpen max-h-0 absolute top-full left-0 w-full  h-[250px] overflow-hidden bg-white shadow-md transition-max-height duration-500 ease-in scrollbar">
+                    <ul class="w-full full border-2">
+                      <li class="p-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">En venta</li>
+                      <li class="p-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">En alquiler</li>
+                      <li class="p-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Reservado</li>
+                      <li class="p-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Vendido</li>
+                      <li class="p-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Alquilado</li>
+                      <li class="p-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">En construcción</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Otros filtros -->
+              <div id="openAdvancedsearch" class="max-h0 overflow-hidden transition-max-height duration-700 ease-in ">
+                <h3 class="underline mt-6"><i class="fas fa-filter"></i>
+                  filtros avanzados</h3>
+                <div class="grid grid-cols-2 gap-2 divide-x mt-6 ">
+                  <!-- seleccionar habitaciones -->
+                  <div class="h-10 px-3">
+                    <div class="h-10">
+                      <div class="flex items-center">
+                        <i class="fas fa-bed text-sky-400 text-sm mr-2"></i>
+                        <label for="" class="text-gray-700 hover:text-sky-400">Habitaciones</label>
+                      </div>
+                      <input type="text" id="keyword" name="keyword" placeholder="" class="outline-none w-full border-b-2 border-sky-300 focus:outline-none placeholder:text-gray-400 font-semibold">
+                    </div>
+                  </div>
+
+                  <!-- seleccionar baños -->
+                  <div class="h-10 px-3">
+                    <div class="h-10">
+                      <div class="flex items-center">
+                        <i class="fas fa-bath text-sky-400 text-sm mr-2"></i>
+                        <label for="" class="text-gray-700 hover:text-sky-400">Baños</label>
+                      </div>
+                      <input type="text" id="keyword" name="keyword" placeholder="" class="outline-none w-full border-b-2 border-sky-300 focus:outline-none placeholder:text-gray-400 font-semibold">
+                    </div>
+                  </div>
+
+                  <!-- seleccionar garage -->
+                  <div class="h-10 px-3 mt-4">
+                    <div class="h-10">
+                      <div class="flex items-center">
+                        <i class="fas fa-car text-sky-400 text-[13px] mr-2"></i>
+                        <label for="" class="text-gray-700 hover:text-sky-400">Garage</label>
+                      </div>
+                      <input type="text" id="keyword" name="keyword" placeholder="" class="outline-none w-full border-b-2 border-sky-300 focus:outline-none placeholder:text-gray-400 font-semibold">
+                    </div>
+                  </div>
+
+                  <!-- seleccionar metros cuadrados -->
+                  <div class="h-10 px-3 mt-4">
+                    <div class="h-10">
+                      <div class="flex items-center">
+                        <i class="fas fa-ruler-combined text-sky-400 text-sm mr-2"></i>
+                        <label for="" class="text-gray-700 hover:text-sky-400">Area</label>
+                      </div>
+                      <input type="text" id="keyword" name="keyword" placeholder="" class="outline-none w-full border-b-2 border-sky-300 focus:outline-none placeholder:text-gray-400 font-semibold">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Rango de precio -->
+                <div class="max-w-2xl m-auto pb-6 xl:pb-4 mt-12">
+                  <div class="w-full">
+                    <h3 class="underline my-6"><i class="fas fa-euro-sign h-6 w-6 border-2 border-black rounded-full p-[3px]"></i>
+                      rango de precios</h3>
+                      <div class="mt-1 flex items-center justify-between space-x-2">
+                      <span id="spanPriceMinRange" class="block font-semibold text-lg text-sky-600">100.000,00 &euro;</span>
+                      <input type="range" id="priceInputRange" class="w-[65%] sm:w-3/4 xl:w-[52%] s3xl:w-[70%] appearance-none bg-transparent 
+                        [&::-webkit-slider-runnable-track]:h-4 
+                        [&::-webkit-slider-runnable-track]:rounded-full 
+                        [&::-webkit-slider-runnable-track]:bg-gray-200 
+                        [&::-webkit-slider-thumb]:appearance-none 
+                        [&::-webkit-slider-thumb]:h-[28px] 
+                        [&::-webkit-slider-thumb]:w-[28px] 
+                        [&::-webkit-slider-thumb]:rounded-full
+                        [&::-webkit-slider-thumb]:mt-[-6px]  
+                        [&::-webkit-slider-thumb]:bg-sky-300"
+                      />
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botones de busquedad -->
+            <div class="flex justify-end space-x-4 mt-6">
+              <button type="submit" id="advancedSearch" class="text-sm font-bold bg-sky-200 bg-opacity-40 hover:bg-sky-100 border-2 border-sky-200 hover:border-sky-400 rounded-2xl py-2 pl-2 pr-3">
+                <i class="fas fa-search text-lg text-sky-600 ml-1"></i>
+                Buscar propiedad
+              </button>
+            </div> 
+          </form>
+        </div>
+      </section>
+     
+      <!-- card de propiedades -->
+      <section class="max-w-[1440px] m-auto bg-gray-100 rounded-xl px-6 py-8 mt-16">
+        <div class="flex flex-col md:flex-row md:justify-between py-4 space-y-2 md:space-y-0">
+          <h2 class="lg:text-xl">
+            <i class="fas fa-filter text-lg text-sky-700"></i>
+            propiedades disponibles según tu búsquedad
+          </h2>
+          <p class="font-semibold pr-2">
+            <i class="fas fa-camera text-lg text-sky-700"></i>
+            Cantidad: 6 
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-6 space-y-8 md:space-y-0 mt-6">
+          <!-- card de propiedad 1 -->
+          <div class="h-auto border border-gray-300 rounded-lg shadow-lg overflow-hidden">
+            <div class="relative h-52 w-full">
+              <div class="absolute top-0 left-0 bg-red-500 hover:bg-primary font-bold rounded-sm text-white cursor-pointer px-2 m-4">En Venta</div>
+              <a href="">
+                <img src="./assets/image/home1.jpg" alt="Property image" class="h-full w-full object-cover border-2 border-white rounded-tl-xl rounded-tr-xl" loading="lazy">
+              </a>
+            </div>
+            <div class="p-4">
+              <div class="flex lg:block xl:flex items-center justify-between mb-3">
+                <span class="lg:block xl:inline font-bold text-3xl">450.569,00 &euro;</span>
+                <span class="text-white text-sm bg-sky-500 px-1 font-bold rounded-sm">Marzo, 2023</span>
+              </div>
+        
+              <a href="#" class="flex items-center space-x-1 pb-2">
+                <address class="flex items-center text-gray-700 hover:text-navyBlue hover:font-bold cursor-pointer">
+                  <span class="fa-solid fa-location-dot text-sm mr-2"></span>
+                  <span class="block text-[14px]">Calle del Sol, 1258 fisticia, España</span>
+                </address>
+              </a>
+            
+              <hr class="my-2 border-gray-300">
+              <div class="flex space-x-4 py-2">
+                <div class="flex items-center space-x-1">
+                  <i class="fas fa-bed text-sky-500"></i>
+                  <span class="text-gray-800 font-bold">3</span>
+                </div>
+                <div class="flex items-center space-x-1">
+                  <i class="fas fa-bath text-sky-500"></i>
+                  <span class="text-gray-800 font-bold">2</span>
+                </div>
+                <div class="flex items-center space-x-1">
+                  <i class="fas fa-car text-sky-500"></i>
+                  <span class="text-gray-800 font-bold">1</span>
+                </div>
+                <div class="flex items-center space-x-1">
+                  <i class="fas fa-ruler-combined text-sky-500"></i>
+                  <span class="text-gray-800 font-bold">120 m&sup2;</span>
+                </div>
+              </div>
             </div>
           </div>
-        </div> 
-      </footer>
+
+           <!-- card de propiedad 2 -->
+           <div class="w-full h-auto border border-gray-300 rounded-lg shadow-lg overflow-hidden">
+            <div class="relative h-52 w-full">
+              <div class="absolute top-0 left-0 bg-green-500 hover:bg-primary font-bold rounded-sm text-white capitalize cursor-pointer px-2 m-4">en alquiler</div>
+              <a href="">
+                <img src="./assets/image/home2.jpg" alt="Property image" class="h-full w-full object-cover border-2 border-white rounded-tl-xl rounded-tr-xl" loading="lazy">
+              </a>
+            </div>
+            <div class="p-4">
+              <div class="flex lg:block xl:flex items-center justify-between mb-3">
+                <span class="lg:block xl:inline font-bold text-3xl">450.569,00 &euro;</span>
+                <span class="text-white text-sm bg-sky-500 px-1 font-bold rounded-sm">12 horas</span>
+              </div>
+        
+              <a href="#" class="flex items-center space-x-1 pb-2">
+                <address class="flex items-center text-gray-700 hover:text-navyBlue hover:font-bold cursor-pointer">
+                  <span class="fa-solid fa-location-dot text-sm mr-2"></span>
+                  <span class="block text-[14px]">Calle del Sol, 1258 fisticia, España</span>
+                </address>
+              </a>
+            
+              <hr class="my-2 border-gray-300">
+              <div class="flex space-x-4 py-2">
+                <div class="flex items-center space-x-1">
+                  <i class="fas fa-bed text-sky-500"></i>
+                  <span class="text-gray-800 font-bold">3</span>
+                </div>
+                <div class="flex items-center space-x-1">
+                  <i class="fas fa-bath text-sky-500"></i>
+                  <span class="text-gray-800 font-bold">2</span>
+                </div>
+                <div class="flex items-center space-x-1">
+                  <i class="fas fa-car text-sky-500"></i>
+                  <span class="text-gray-800 font-bold">1</span>
+                </div>
+                <div class="flex items-center space-x-1">
+                  <i class="fas fa-ruler-combined text-sky-500"></i>
+                  <span class="text-gray-800 font-bold">120 m&sup2;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card de propiedad 3 -->
+          <div class="selection:h-auto border border-gray-300 rounded-lg shadow-lg overflow-hidden">
+            <div class="relative h-52 w-full">
+              <div class="absolute top-0 left-0 bg-violet-500 hover:bg-primary font-bold rounded-sm text-white capitalize cursor-pointer px-2 m-4">reservado</div>
+              <a href="">
+                <img src="./assets/image/home3.jpg" alt="Property image" class="h-full w-full object-cover border-2 border-white rounded-tl-xl rounded-tr-xl" loading="lazy">
+              </a>
+            </div>
+            <div class="p-4">
+              <div class="flex lg:block xl:flex items-center justify-between mb-3">
+                <span class="lg:block xl:inline font-bold text-3xl">450.569,00 &euro;</span>
+                <span class="text-white text-sm bg-sky-500 px-1 font-bold rounded-sm">Marzo, 2023</span>
+              </div>
+        
+              <a href="#" class="flex items-center space-x-1 pb-2">
+                <address class="flex items-center text-gray-700 hover:text-navyBlue hover:font-bold cursor-pointer">
+                  <span class="fa-solid fa-location-dot text-sm mr-2"></span>
+                  <span class="block text-[14px]">Calle del Sol, 1258 fisticia, España</span>
+                </address>
+              </a>
+            
+              <hr class="my-2 border-gray-300">
+              <div class="flex space-x-4 py-2">
+                <div class="flex items-center space-x-1">
+                  <i class="fas fa-bed text-sky-500"></i>
+                  <span class="text-gray-800 font-bold">3</span>
+                </div>
+                <div class="flex items-center space-x-1">
+                  <i class="fas fa-bath text-sky-500"></i>
+                  <span class="text-gray-800 font-bold">2</span>
+                </div>
+                <div class="flex items-center space-x-1">
+                  <i class="fas fa-car text-sky-500"></i>
+                  <span class="text-gray-800 font-bold">1</span>
+                </div>
+                <div class="flex items-center space-x-1">
+                  <i class="fas fa-ruler-combined text-sky-500"></i>
+                  <span class="text-gray-800 font-bold">120 m&sup2;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card de propiedad 4 -->
+          <div class="h-auto border border-gray-300 rounded-lg shadow-lg overflow-hidden">
+            <div class="relative h-52 w-full">
+              <div class="absolute top-0 left-0 bg-yellow-500 hover:bg-primary font-bold rounded-sm text-white capitalize cursor-pointer px-2 m-4">en construcción</div>
+              <a href="">
+                <img src="./assets/image/home4.jpg" alt="Property image" class="h-full w-full object-cover border-2 border-white rounded-tl-xl rounded-tr-xl" loading="lazy">
+              </a>
+            </div>
+            <div class="p-4">
+              <div class="flex lg:block xl:flex items-center justify-between mb-3">
+                <span class="lg:block xl:inline font-bold text-3xl">450.569,00 &euro;</span>
+                <span class="text-white text-sm bg-sky-500 px-1 font-bold rounded-sm">Marzo, 2023</span>
+              </div>
+        
+              <a href="#" class="flex items-center space-x-1 pb-2">
+                <address class="flex items-center text-gray-700 hover:text-navyBlue hover:font-bold cursor-pointer">
+                  <span class="fa-solid fa-location-dot text-sm mr-2"></span>
+                  <span class="block text-[14px]">Calle del Sol, 1258 fisticia, España</span>
+                </address>
+              </a>
+            
+              <hr class="my-2 border-gray-300">
+              <div class="flex space-x-4 py-2">
+                <div class="flex items-center space-x-1">
+                  <i class="fas fa-bed text-sky-500"></i>
+                  <span class="text-gray-800 font-bold">3</span>
+                </div>
+                <div class="flex items-center space-x-1">
+                  <i class="fas fa-bath text-sky-500"></i>
+                  <span class="text-gray-800 font-bold">2</span>
+                </div>
+                <div class="flex items-center space-x-1">
+                  <i class="fas fa-car text-sky-500"></i>
+                  <span class="text-gray-800 font-bold">1</span>
+                </div>
+                <div class="flex items-center space-x-1">
+                  <i class="fas fa-ruler-combined text-sky-500"></i>
+                  <span class="text-gray-800 font-bold">120 m&sup2;</span>
+                </div>
+              </div>
+            </div>
+            </div>
     
-      <div class=" bg-gray-950 p-6 text-center text-gray-500">
+            <!-- card de propiedad 5 -->
+            <div class="h-auto border border-gray-300 rounded-lg shadow-lg overflow-hidden">
+              <div class="relative h-52 w-full">
+                <div class="absolute top-0 left-0 bg-red-500 hover:bg-primary font-bold rounded-sm text-white capitalize cursor-pointer px-2 m-4">en venta</div>
+                <a href="">
+                  <img src="./assets/image/home5.jpg" alt="Property image" class="h-full w-full object-cover border-2 border-white rounded-tl-xl rounded-tr-xl" loading="lazy">
+                </a>
+              </div>
+              <div class="p-4">
+                <div class="flex lg:block xl:flex items-center justify-between mb-3">
+                  <span class="lg:block xl:inline font-bold text-3xl">450.569,00 &euro;</span>
+                  <span class="text-white text-sm bg-sky-500 px-1 font-bold rounded-sm">Marzo, 2023</span>
+                </div>
+          
+                <a href="#" class="flex items-center space-x-1 pb-2">
+                  <address class="flex items-center text-gray-700 hover:text-navyBlue hover:font-bold cursor-pointer">
+                    <span class="fa-solid fa-location-dot text-sm mr-2"></span>
+                    <span class="block text-[14px]">Calle del Sol, 1258 fisticia, España</span>
+                  </address>
+                </a>
+              
+                <hr class="my-2 border-gray-300">
+                <div class="flex space-x-4 py-2">
+                  <div class="flex items-center space-x-1">
+                    <i class="fas fa-bed text-sky-500"></i>
+                    <span class="text-gray-800 font-bold">3</span>
+                  </div>
+                  <div class="flex items-center space-x-1">
+                    <i class="fas fa-bath text-sky-500"></i>
+                    <span class="text-gray-800 font-bold">2</span>
+                  </div>
+                  <div class="flex items-center space-x-1">
+                    <i class="fas fa-car text-sky-500"></i>
+                    <span class="text-gray-800 font-bold">1</span>
+                  </div>
+                  <div class="flex items-center space-x-1">
+                    <i class="fas fa-ruler-combined text-sky-500"></i>
+                    <span class="text-gray-800 font-bold">120 m&sup2;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- card de propiedad 6 -->
+            <div class="h-auto border border-gray-300 rounded-lg shadow-lg overflow-hidden">
+              <div class="relative h-52 w-full">
+                <div class="absolute top-0 left-0 bg-red-500 hover:bg-primary font-bold rounded-sm text-white capitalize cursor-pointer px-2 m-4">en venta</div>
+                <a href="">
+                  <img src="./assets/image/home.jpg" alt="Property image" class="h-full w-full object-cover border-2 border-white rounded-tl-xl rounded-tr-xl" loading="lazy">
+                </a>
+              </div>
+              <div class="p-4">
+                <div class="flex lg:block xl:flex items-center justify-between mb-3">
+                  <span class="lg:block xl:inline font-bold text-3xl">450.569,00 &euro;</span>
+                  <span class="text-white text-sm bg-sky-500 px-1 font-bold rounded-sm">Marzo, 2023</span>
+                </div>
+          
+                <a href="#" class="flex items-center space-x-1 pb-2">
+                  <address class="flex items-center text-gray-700 hover:text-navyBlue hover:font-bold cursor-pointer">
+                    <span class="fa-solid fa-location-dot text-sm mr-2"></span>
+                    <span class="block text-[14px]">Calle del Sol, 1258 fisticia, España</span>
+                  </address>
+                </a>
+              
+                <hr class="my-2 border-gray-300">
+                <div class="flex space-x-4 py-2">
+                  <div class="flex items-center space-x-1">
+                    <i class="fas fa-bed text-sky-500"></i>
+                    <span class="text-gray-800 font-bold">3</span>
+                  </div>
+                  <div class="flex items-center space-x-1">
+                    <i class="fas fa-bath text-sky-500"></i>
+                    <span class="text-gray-800 font-bold">2</span>
+                  </div>
+                  <div class="flex items-center space-x-1">
+                    <i class="fas fa-car text-sky-500"></i>
+                    <span class="text-gray-800 font-bold">1</span>
+                  </div>
+                  <div class="flex items-center space-x-1">
+                    <i class="fas fa-ruler-combined text-sky-500"></i>
+                    <span class="text-gray-800 font-bold">120 m&sup2;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <!-- Boton de paginacion -->
+        <button class="block w-60 m-auto py-2 bg-transparent  hover:bg-sky-100 text-xl text-center font-bold rounded-full border border-sky-300 hover:border-sky-400 mt-8">Ver Más</button>
+      </section>
+    </main>
+
+    <footer class="h-20 bg-gray-950  text-center text-gray-500">
+      <div class="p-6">
         <p>&copy; 2023 Home Finders. Todos los derechos reservados.</p>
       </div>
-      
-      <script type="module" src="./assets/js/index.js"></script>
+    </footer>
+  </div>
+
+  <script type="module" src="./assets/js/index.js"></script>
+  <script>
+    const openFilterSearch = document.querySelectorAll('.openFilterSearch');
+    const advancedSearch = document.querySelector('#advancedSearch');
+    const openAdvancedsearch = document.querySelector('#openAdvancedsearch');
+    const priceInputRange = document.querySelector('#priceInputRange');
+    
+    openFilterSearch.forEach(item => {
+      item.addEventListener('click', (e) => {
+        const parent = e.target.parentNode;
+        const openSearch = parent.nextElementSibling;
+        openSearch.classList.toggle('max-h-80');
+      });
+    });
+
+    advancedSearch.addEventListener('click', (e) => {
+      e.preventDefault();
+      openAdvancedsearch.classList.toggle('max-h-[400px]');
+    });
+
+    priceInputRange.addEventListener('input', () => {
+      const spanPriceMinRange = document.querySelector('#spanPriceMinRange');
+    
+      let min = 100000;
+      let max = 14000000;
+
+      priceInputRange.setAttribute('min', min);
+      priceInputRange.setAttribute('max', max);
+      priceInputRange.setAttribute('step', '0.01');
+
+      const inputValue = parseFloat(priceInputRange.value); 
+      const decimal = inputValue.toLocaleString('es-ES', {minimumFractionDigits: 2, maximumFractionDigits: 2})
+
+      spanPriceMinRange.textContent = decimal + ' €';
+    });
+  </script>
+  
 </body>
 </html>

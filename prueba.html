@@ -1,0 +1,203 @@
+<form class="block blu max-w-4xl m-auto bg-sky-100 rounded-3xl p-4">
+    <div id="openAdvancedSearch" class="max-h-16 bg-withe p-4 overflow-hidden bg-white rounded-3xl shadow-1xl py-2 transition-max-height duration-700 ease-in">
+      <!-- filtro de busquedad -->
+      <div class="grid grid-cols-4 gap-2 h-20 divide-x">
+
+        <!-- Buscador -->
+        <div class="h-10 flex items-center">
+          <i class="fas fa-search mr-2 text-sm text-sky-400"></i>
+          <input type="text" id="keyword" name="keyword" placeholder="Búscador" class="outline-none w-full py-2 border-b focus:border-b-2 focus:border-sky-300 placeholder:text-gray-400 font-semibold">
+        </div>
+
+        <!-- seleccionar ubicación -->
+        <div class="h-10 px-3 relative">
+          <div class="searchBtn w-full h-full flex items-center justify-between relative">
+            <button class="text-gray-400 font-semibold hover:text-sky-400">
+              <i class="fas fa-map-marker-alt ml-1 text-[12px] text-sky-400"></i>
+              Ubicación
+            </button>
+            <i class="fas fa-caret-down ml-1 text-lg text-sky-400 cursor-pointer"></i> 
+          </div>
+
+          <div class="searchOpen max-h-0 absolute top-full left-0 z-10 w-full h-[250px] overflow-hidden overflow-y-scroll bg-white shadow-md transition-max-height duration-700 ease-in scrollbar">
+              <ul class="w-full full border-2 py-2 space space-y-2">
+                <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Barcelona</li>
+                <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Madrid</li>
+                <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Valencia</li>
+                <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Sevilla</li>
+                <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Bilbao</li>
+                <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Málaga</li>
+                <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Granada</li>
+                <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Palma de Mallorca</li>
+                <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Zaragoza</li>
+                <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Alicante</li>
+              </ul>
+          </div>
+        </div>
+
+        <!-- seleccionar inmuebles -->
+        <div class="h-10 px-3 relative">
+          <div class="searchBtn w-full h-full flex items-center justify-between">
+            <button class="text-black hover:text-sky-400">
+              <i class="fas fa-home ml-1 text-[12px] text-sky-400"></i>
+              Inmuebles
+            </button>
+            <i class="fas fa-caret-down ml-1 text-lg text-sky-400 cursor-pointer"></i> 
+          </div>
+
+          <div class="searchOpen max-h-0 absolute top-full left-0 w-full  h-[250px] overflow-hidden overflow-y-scroll bg-white shadow-md transition-max-height duration-700 ease-in scrollbar">
+            <ul class=" py-2 space-y-2 border-2">
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Apartamentos</li>
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Casas unifamiliares</li>
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Chalets</li>
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Áticos</li>
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Locales comerciales</li>
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Terrenos</li>
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Oficinas</li>
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Locales industriales</li>
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Propiedades rurales</li>
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Locales para alquiler</li>
+            </ul>
+        </div>
+        </div>
+        
+        <!-- seleccionar estado -->
+        <div class="h-10 px-3 relative">
+          <div class="searchBtn w-full h-full flex items-center justify-between">
+            <button class="text-black hover:text-sky-400">
+              <i class="fas fa-check mr-1 text-[12px] text-sky-400"></i>
+              Estado
+            </button>
+            <i class="fas fa-caret-down ml-1 text-lg text-sky-400 cursor-pointer"></i> 
+          </div>
+          <!-- si agregan mas elementos agregar una barra de scroll overflow-y-scroll -->
+          <div class="searchOpen max-h-0 absolute top-full left-0 w-full  h-[250px] overflow-hidden bg-white shadow-md transition-max-height duration-700 ease-in scrollbar">
+            <ul class=" py-2 space space-y-2 border-2">
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">En venta</li>
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">En alquiler</li>
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Reservado</li>
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Vendido</li>
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Alquilado</li>
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">En construcción</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Otros filtros -->
+      <div class="grid grid-cols-4 gap-2 h-20 divide-x">
+        <!-- seleccionar de habitaciones -->
+        <div class="h-10 px-3 relative">
+          <div class="searchBtn w-full h-full flex items-center justify-between">
+            <button class="text-black hover:text-sky-400">
+              <i class="fas fa-bed text-sky-400 text-[13px] mr-1"></i>
+              Habitaciones
+            </button>
+            <i class="fas fa-caret-down ml-1 text-lg text-sky-400 cursor-pointer"></i> 
+          </div>
+
+          <div class="searchOpen max-h-0 absolute top-full left-0 w-full  h-[250px] overflow-hidden bg-white shadow-md transition-max-height duration-700 ease-in">
+            <ul class=" py-2 space-y-2 border-2">
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">1</li>
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">2</li>
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">3</li>
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Más</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- seleccionar de baños -->
+        <div class="h-10 px-3 relative">
+          <div class="searchBtn w-full h-full flex items-center justify-between"> 
+            <button class="text-black hover:text-sky-400 cursor-pointer">
+              <i class="fas fa-bath text-sky-400 text-[13px] mr-1"></i>
+              Baños
+            </button>
+            <i class="fas fa-caret-down ml-1 text-lg text-sky-400 cursor-pointer"></i> 
+          </div>
+
+          <div class="searchOpen max-h-0 absolute top-full left-0 w-full  h-[250px] overflow-hidden bg-white shadow-md transition-max-height duration-700 ease-in">
+            <ul class=" py-2 space-y-2 border-2">
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">1</li>
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">2</li>
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">3</li>
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Más</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- seleccionar de garage -->
+        <div class="h-10 px-3 relative">
+          <div class="searchBtn w-full h-full flex items-center justify-between"> 
+            <button class="text-black hover:text-sky-400">
+              <i class="fas fa-car text-sky-400 text-[13px] mr-1"></i>
+              Garage
+            </button>
+            <i class="fas fa-caret-down ml-1 text-lg text-sky-400 cursor-pointer"></i> 
+          </div>
+
+          <div class="searchOpen max-h-0 absolute top-full left-0 w-full  h-[250px] overflow-hidden bg-white shadow-md transition-max-height duration-700 ease-in">
+            <ul class=" py-2 space-y-2 border-2">
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">1</li>
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">2</li>
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">3</li>
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Más</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- seleccionar de area -->
+        <div class="h-10 px-3 relative">
+          <div class="searchBtn w-full h-full flex items-center justify-between"> 
+            <button class="text-black hover:text-sky-400">
+              <i class="fas fa-ruler-combined text-sky-400 text-[13px] mr-1"></i>
+              Area cubierta
+            </button>
+            <i class="fas fa-caret-down ml-1 text-lg text-sky-400 cursor-pointer"></i> 
+          </div>
+
+          <div class="searchOpen max-h-0 absolute top-full left-0 w-full  h-[250px] overflow-hidden bg-white shadow-md transition-max-height duration-700 ease-in">
+            <ul class=" py-2 space-y-2 border-2">
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">1</li>
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">2</li>
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">3</li>
+              <li class="py-1 pl-3 hover:bg-sky-100 hover:font-semibold cursor-pointer">Más</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rango de precio -->
+      <div class="max-w-xl m-auto">
+        <div class="w-full">
+          <label for="price-range" class="block text-sm font-medium text-gray-700">Rango de precios</label>
+          <div class="mt-1 flex items-center justify-between space-x-4">
+            <span>$3,500</span>
+            <input type="range" class="w-full appearance-none bg-transparent 
+              [&::-webkit-slider-runnable-track]:h-4 
+              [&::-webkit-slider-runnable-track]:rounded-full 
+              [&::-webkit-slider-runnable-track]:bg-gray-200 
+              [&::-webkit-slider-thumb]:appearance-none 
+              [&::-webkit-slider-thumb]:h-[28px] 
+              [&::-webkit-slider-thumb]:w-[28px] 
+              [&::-webkit-slider-thumb]:rounded-full
+              [&::-webkit-slider-thumb]:mt-[-6px]  
+              [&::-webkit-slider-thumb]:bg-sky-300"
+            />
+            <span>$6,500,000</span>
+          </div> 
+          <output for="price-range">$3,500</output>
+        </div>
+      </div>
+
+      
+    </div>
+    <!-- Botones de busquedad -->
+    <div class="mt-4 flex justify-end space-x-4">
+      <button type="button" id="advancedSearch" class="font-bold bg-sky-300 bg-opacity-40 hover:bg-sky-300 border-2 border-sky-300 hover:border-sky-400 rounded-2xl py-2 px-4">
+        <i class="fas fa-search-plus text-xl text-sky-600 ml-1"></i>
+        Búsquedad avanzada
+      </button>
+      <button type="submit" class="text-white font-bold bg-sky-500 border-2 border-sky-600 rounded-2xl py-2 px-4">Buscar</button>
+    </div> 
+  </form>
