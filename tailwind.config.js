@@ -36,6 +36,9 @@ module.exports = {
       transitionProperty: {
         'max-height': 'max-height',
       },
+      spacing: {
+        'custom-height': 'calc(100vh - 80px)',
+      },
       screens: {
         's375': '375px',
         's425': '425px',

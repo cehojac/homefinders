@@ -1,16 +1,19 @@
-// import Swiper bundle with all modules installed
 import Swiper from 'swiper/bundle';
+import "swiper/swiper-bundle.min.css";
 
-// import styles bundle
-import 'swiper/css/bundle';
-
-const propertyDetail = new Swiper('.propertyDetail', {
-    // Optional parameters
-    // direction: 'vertical',
-    loop: true,
+// const propertyDetail = new Swiper('.propertyDetail', {
+//     autoplay: {
+//         delay: 3000,
+//     },
     
-    autoplay: {
-        delay: 3000,
+// });
+
+const testimonial = new Swiper('.testimonial', {
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true
     },
-    
-});
+    autoplay: {
+        delay: 3000
+    },
+})

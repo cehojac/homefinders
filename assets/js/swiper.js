@@ -28,7 +28,6 @@ const initializeSwipers = () => {
         prevEl,
       },
       breakpoints: breakpoints,
-      pagination: options.pagination
     });
   }
   
